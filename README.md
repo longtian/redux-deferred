@@ -5,7 +5,6 @@
 [![](https://img.shields.io/npm/l/redux-deferred.svg)](https://github.com/wyvernnot/redux-deferred/blob/master/LICENSE)
 
 Redux middleware for jQuery [Deferred](http://api.jquery.com/category/deferred-object/) Object.
-Inspired by [redux-promise](https://github.com/acdlite/redux-promise).
 
 [![NPM](https://nodei.co/npm/redux-deferred.png)](https://nodei.co/npm/redux-deferred/)
 
@@ -40,7 +39,27 @@ let action = {
 store.dispatch(action);
 ```
 
-Since Deferred is often async, it will not be dispatched until it is resolved or rejected.
+Since Deferred is often async, the action wrapping it will not be dispatched until it is resolved or rejected.
+
+And when it does, the action will be really dispatched with payload changed to the result value of the deferred.
+
+```js
+(state={},action)=>{
+  switch(action.type){
+    case 'LOAD_SOME':
+      return Object.assign({},state,{
+        data:action.payload
+      });
+   default:
+      return state;
+  }
+}
+```
+
+**Error handling**
+
+If the request fail, your can get error detail infomation in action's `payload` property.
+While action's `error` property equals true.
 
 ```js
 (state={},action)=>{
@@ -60,6 +79,8 @@ Since Deferred is often async, it will not be dispatched until it is resolved or
   }
 }
 ```
+
+That's all. The `redux-deferred` core code is below 30 lines. And heavily inspired by [redux-promise](https://github.com/acdlite/redux-promise).
 
 ## Usage
 
@@ -90,3 +111,4 @@ let store = createStore(reducers,applyMiddleware(DeferredMiddleware));
 ## License
 
 MIT
+
