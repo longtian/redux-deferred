@@ -1,0 +1,38 @@
+{
+  "name": "redux-deferred",
+  "version": "0.0.0",
+  "description": "Redux middleware for jQuery Deferred Object",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js --compilers js:babel-core/register",
+    "help": "babel -h",
+    "compile": "babel ./src --minified --no-comments --source-maps=inline --out-dir=./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyvernnot/redux-deferred.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "jquery",
+    "deferred"
+  ],
+  "author": "wyvernnot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wyvernnot/redux-deferred/issues"
+  },
+  "homepage": "https://github.com/wyvernnot/redux-deferred#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "jsdom": "^8.0.4",
+    "mocha": "^2.4.5"
+  },
+  "optionalDependencies": {
+    "jquery": "*",
+    "redux": "*"
+  }
+}
