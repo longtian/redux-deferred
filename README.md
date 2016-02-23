@@ -3,7 +3,7 @@ Redux middleware for jQuery Deferred object. Insipied by [redux-promise](https:/
 
 ## Preface
 
-To create an AJAX request in jQuery is very easy.
+To create an AJAX request in jQuery is easy.
 
 ```js
 $.get('some.url',function(result){
@@ -11,7 +11,7 @@ $.get('some.url',function(result){
 })
 ```
 
-It is not unknown by everyone thar all AJAX method in jQuery will return an [Deferred](http://api.jquery.com/category/deferred-object/)
+It is not known by everyone thar all AJAX method in jQuery will return an [Deferred](http://api.jquery.com/category/deferred-object/)
  object for you to use. So the code above can be rewriten like this:
 
 ```js
@@ -32,7 +32,7 @@ let action = {
 store.dispatch(action);
 ```
 
-Since it is async, it will not be actually dispatched until it is resolved or rejected.
+Since Deferred is often async, it will not be actually dispatched until it is resolved or rejected.
 
 ```js
 (state={},action)=>{
@@ -55,9 +55,11 @@ Since it is async, it will not be actually dispatched until it is resolved or re
 
 ## Usage
 
+**Install**
 ```sh
 npm install redux-deferred
 ```
+**ES6**
 
 ```js
 import DeferredMiddleware from 'redux-deferred';
@@ -67,8 +69,8 @@ let store = createStore(reducers,applyMiddleware(DeferredMiddleware));
 
 ## Reference
 
-[promisejs.org](https://www.promisejs.org/)
-[redux-promise](https://github.com/acdlite/redux-promise)
+- [promisejs.org](https://www.promisejs.org/)
+- [redux-promise](https://github.com/acdlite/redux-promise)
 
 ## License
 
