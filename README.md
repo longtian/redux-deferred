@@ -1,10 +1,12 @@
 # redux-deferred
-![NPM](https://david-dm.org/wyvernnot/redux-deferred.svg)
-[![Build Status](https://travis-ci.org/wyvernnot/redux-deferred.svg?branch=master)](https://travis-ci.org/wyvernnot/redux-deferred)
+[![](https://img.shields.io/travis/wyvernnot/redux-deferred.svg)](https://travis-ci.org/wyvernnot/redux-deferred)
+[![](https://img.shields.io/npm/v/redux-deferred.svg)](https://www.npmjs.com/package/redux-deferred)
+[![](https://img.shields.io/coveralls/wyvernnot/redux-deferred.svg)](https://coveralls.io/github/wyvernnot/redux-deferred)
+[![](https://img.shields.io/npm/l/redux-deferred.svg)](https://github.com/wyvernnot/redux-deferred/blob/master/LICENSE)
 
 Redux middleware for jQuery Deferred object. Insipied by [redux-promise](https://github.com/acdlite/redux-promise).
 
-[![NPM](https://nodei.co/npm/npm2dot.png)](https://nodei.co/npm/npm2dot/)
+[![NPM](https://nodei.co/npm/redux-deferred.png)](https://nodei.co/npm/redux-deferred/)
 
 ## Preface
 
