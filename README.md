@@ -28,7 +28,8 @@ deferredObject.done(function(result){
 })
 ```
 
-Using this middleware you can wrap the request into the [payload](https://github.com/acdlite/flux-standard-action#payload) of an action and dispatch it like any normal actions.
+For this middleware to work you `MUST` wrap the deferredObject into the [payload](https://github.com/acdlite/flux-standard-action#payload)
+of an action and then dispatch it.
 
 ```js
 let action = {
