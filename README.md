@@ -1,4 +1,11 @@
 # redux-deferred
+
+## Deprecated
+
+> This project is depracated and no longger maintained since jQuery Deferred has been updated to be compatible with
+>  Promises/A+ and ES2015 (a.k.a ES6) Promise [](https://jquery.com/upgrade-guide/3.0/#deferred)
+> Use [redux-promise](https://www.npmjs.com/package/redux-promise) instead
+
 [![](https://img.shields.io/travis/wyvernnot/redux-deferred.svg)](https://travis-ci.org/wyvernnot/redux-deferred)
 [![](https://img.shields.io/npm/v/redux-deferred.svg)](https://www.npmjs.com/package/redux-deferred)
 [![](https://img.shields.io/coveralls/wyvernnot/redux-deferred.svg)](https://coveralls.io/github/wyvernnot/redux-deferred)
